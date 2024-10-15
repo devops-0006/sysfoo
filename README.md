@@ -2,6 +2,7 @@
 
 1 : Testing Polling Configuration 
 2 : Branch Policies Test 
+3.1 : Testing Branch Policies 
 
 
 
