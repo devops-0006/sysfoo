@@ -1,6 +1,9 @@
 # Changelog 
 
 1 : Testing Polling Configuration 
+2 : Branch Policies Test 
+
+
 
 # Sysfoo Application
 
