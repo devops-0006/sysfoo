@@ -22,7 +22,7 @@ pipeline {
 
       }
       steps {
-        echo 'running unit tests...'
+        echo 'running unit tests.....'
         sh 'mvn clean test'
       }
     }
