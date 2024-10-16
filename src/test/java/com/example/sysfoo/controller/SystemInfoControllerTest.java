@@ -27,9 +27,9 @@ public class SystemInfoControllerTest {
 
     @Test
     public void getVersionTest() throws Exception {
-        when(systemInfoService.getAppVersion()).thenReturn("1.0.0");
+        when(systemInfoService.getAppVersion()).thenReturn("1.0.1");
         mockMvc.perform(get("/version"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("1.0.0"));
+                .andExpect(content().string("1.0.1"));
     }
 }
