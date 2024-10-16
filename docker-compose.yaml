@@ -1,6 +1,5 @@
-services: 
-  sysfoo: 
-  image: initcron/sysfoo:dev 
-  port: 
-    - 8888:8080
- 
+services:
+  sysfoo:
+    image: initcron/sysfoo:dev
+    ports:
+      - 8888:8080
