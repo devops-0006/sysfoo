@@ -34,7 +34,7 @@ pipeline {
             docker {
               image 'maven:3.9.6-eclipse-temurin-17'
             }
-
+          when { branch 'main' }
           }
           steps {
             echo 'packaging sysfoo app...'
@@ -43,8 +43,9 @@ pipeline {
           }
         }
 
-        stage('DOcker B&P') {
+        stage('Docker B&P') {
           agent any
+          when { branch 'main' }
           steps {
             script {
               docker.withRegistry('https://index.docker.io/v1/', 'dockerlogin') {
